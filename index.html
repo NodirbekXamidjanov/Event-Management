@@ -2,17 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + TS</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-  <div id="app" class="w-20 h-20 bg-amber-700"></div>
-  <script type="module" src="/src/main.ts"></script>
+    <header>
+        <div class="display-phone h-[44px]">
+            <img src="./Status Bar.svg">
+        </div>
+        <div class="container mx-auto w-[87.7%]">
+            <div class="nav">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <img src="./Frame 10.svg" class="w-24" alt="">
+                    </div>
+                    <div class="menu-btn ">
+                        <img src="./Group 1000002653.svg" alt="">
+                    </div>
+                </div>
+
+                <ul class="hidden">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="auth-btns-box hidden">
+                    <button>Login</button>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <div class="home flex flex-col items-center">
+                <div class="title">
+                    <h2
+                        class="mx-auto w-[97%] h-[195px] font-[Inconsolata] text-[40px] mt-10 text-center tracking-normal leading-[150%]">
+                        Experience Events Like Never Before.</h2>
+                </div>
+                <div class="decription">
+                    <p class="font-[Jost] leading-[150%] text-center text-[16px] text-[#525252] font-normal">Welcome to
+                        R event agency, where innovation meets
+                        excellence in event planning. We take pride in
+                        crafting extraordinary moments tailored to your vision.</p>
+                </div>
+                <div
+                    class="get-started-box flex gap-[12px] pt-[10px] pr-[0px] pb-[10px] pl-[20px] mt-7 rounded-[100px] w-[162px] h-[48px] justify-center items-center bg-black">
+                    <p class="text-center text-base font-normal leading-6  font-[Jost] text-[16px]  text-white">Get Started</p>
+                    <button class="flex w-10 h-10 p-2 justify-center items-center flex-shrink-0 rounded-[71px] bg-white"><img src="public/bi_arrow-down.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
