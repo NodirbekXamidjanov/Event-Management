@@ -18,4 +18,9 @@
     background: url(../public/Frame\ 1171276637.svg) rgb(56, 56, 56) -1975.776px -52.107px /
       1113.218% 112.709% no-repeat;
   }
+  .flex_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
