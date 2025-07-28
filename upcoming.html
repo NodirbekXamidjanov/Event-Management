@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <!-- navbara -->
+    <div class="container p-10 flex items-center">
+      <img src="./public/about_us_img/nav_logo_img2.png " alt="" />
+      <div class="flex gap-[58px] text-lg ml-[343px] w-[454px] items-center">
+        <h1 class="text-neutral-500 hover:text-black">
+          <a href="./hom.html">Home</a>
+        </h1>
+        <h1 class="text-neutral-500 hover:text-black">
+          <a href="./index.html">Pages</a>
+        </h1>
+        <h1 class="text-neutral-500 hover:text-black">Event</h1>
+        <h1 class="text-neutral-500 hover:text-black">Portfolio</h1>
+        <h1 class="text-neutral-500 hover:text-black">Blog</h1>
+      </div>
+      <div class="ml-[192px]">
+        <button
+          class="w-[126px] h-[50px] border-1 rounded-4xl border-amber-400 hover:text-zinc-950 hover:bg-amber-400"
+        >
+          Log in
+        </button>
+        <button
+          class="w-[126px] ml-[20px] h-[50px] border-1 rounded-4xl border-amber-400 hover:text-zinc-950 hover:bg-amber-400"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+    <h1 class="text-7xl font-normal font-serif text-center mt-[60px]">
+      Upcoming Events
+    </h1>
+    <div class="p-10 flex gap-[78px]">
+      <div
+        class="flex items-center p-6 w-[1100px] h-[90px] bg-[#FFF9ED] gap-[730px] border-[2px] border-neutral-200 rounded-[50px]"
+      >
+        <p class="text-[18px] text-neutral-400 font-serif">Search for events</p>
+        <button
+          class="w-[182px] text-lg font-bold hover:text-neutral-700 hover:bg-orange-300 h-[71px] rounded-[100px] bg-[#FFD67E] flex items-center gap-[8px] justify-center"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.0002 21L16.6572 16.657M16.6572 16.657C17.4001 15.9141 17.9894 15.0322 18.3914 14.0616C18.7935 13.0909 19.0004 12.0506 19.0004 11C19.0004 9.94942 18.7935 8.90911 18.3914 7.93848C17.9894 6.96785 17.4001 6.08591 16.6572 5.34302C15.9143 4.60014 15.0324 4.01084 14.0618 3.6088C13.0911 3.20675 12.0508 2.99982 11.0002 2.99982C9.9496 2.99982 8.90929 3.20675 7.93866 3.6088C6.96803 4.01084 6.08609 4.60014 5.34321 5.34302C3.84288 6.84335 3 8.87824 3 11C3 13.1218 3.84288 15.1567 5.34321 16.657C6.84354 18.1574 8.87842 19.0002 11.0002 19.0002C13.122 19.0002 15.1569 18.1574 16.6572 16.657Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Find Events
+        </button>
+      </div>
+      <div class="">
+        <div class="flex items-center gap-[48px]">
+          <p class="text-lg text-neutral-400 font-normal hover:text-neutral-800 font-serif">List</p>
+          <p class="text-lg text-neutral-400 font-normal  hover:text-neutral-800 font-serif">Month</p>
+          <p class="text-lg text-neutral-400 font-normal  hover:text-neutral-800 font-serif">Day</p>
+        </div>
+        <img
+          src="./public/upcoming/upcoming_lineka_img-14.png"
+          alt=""
+          class="mt-[41px] -ml-[10px]"
+        />
+      </div>
+    </div>
+    <div class="flex p-10 items-center -mt-[60px]">
+      <p class="text-2xl font-serif font-normal">October 2024</p>
+      <img
+        src="./public/upcoming/lineka-w-957px.png"
+        alt=""
+        class="ml-[24px]"
+      />
+      <button
+        class="w-[252px] h-[56px] ml-[34px] bg-[#FFD67E] rounded-[50px] flex items-center gap-[10px] text-lg hover:bg-orange-300 font-serif justify-center"
+      >
+        Subscribe to calendar
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.50131 9.71701L11.4753 17.49C11.6154 17.6265 11.8032 17.7029 11.9988 17.7029C12.1944 17.7029 12.3822 17.6265 12.5223 17.49L20.4993 9.71701C20.5646 9.65342 20.6165 9.57739 20.652 9.4934C20.6874 9.40941 20.7057 9.31918 20.7057 9.22802C20.7057 9.13685 20.6874 9.04662 20.652 8.96263C20.6165 8.87864 20.5646 8.80261 20.4993 8.73901C20.3654 8.60817 20.1855 8.53492 19.9983 8.53492C19.8111 8.53492 19.6312 8.60817 19.4973 8.73901L11.9988 16.0485L4.50181 8.73902C4.36793 8.60862 4.18844 8.53565 4.00156 8.53565C3.81467 8.53565 3.63518 8.60862 3.50131 8.73902C3.43599 8.80261 3.38408 8.87864 3.34863 8.96263C3.31318 9.04662 3.29492 9.13686 3.29492 9.22802C3.29492 9.31918 3.31318 9.40941 3.34863 9.4934C3.38408 9.57739 3.43599 9.65342 3.50131 9.71701Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Tue</p>
+        <p class="text-3xl ml-4 font-normal font-serif">1</p>
+      </span>
+      <img src="./public/upcoming/lineka_row_.png" alt="" class="ml-[90px]" />
+      <div class="ml-[30px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 21V5C4 4.45 4.19583 3.97917 4.5875 3.5875C4.97917 3.19583 5.45 3 6 3H16C16.55 3 17.0208 3.19583 17.4125 3.5875C17.8042 3.97917 18 4.45 18 5V21L11 18L4 21Z"
+                fill="#F59E0B"
+              />
+            </svg>
+          </div>
+          <p class="text-2xl font-normal">Featured</p>
+          <div
+            class="w-[54px] h-[54px] ml-[24px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Street Food Festival</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">$70</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img1.png"
+        alt=""
+        class="ml-[120px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Wed</p>
+        <p class="text-3xl ml-4 font-normal font-serif">4</p>
+      </span>
+      <div class="ml-[110px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Corporate celebrationsl</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">$85</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img2.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Thu</p>
+        <p class="text-3xl ml-1.5 font-normal font-serif">6</p>
+      </span>
+      <div class="ml-[120px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">
+          Apple event: introducing new IOS
+        </h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">Free</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img3.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Sat</p>
+        <p class="text-3xl ml-1.5 font-normal font-serif">12</p>
+      </span>
+      <div class="ml-[125px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Giant babies show</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">Sold out</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img4.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Sun</p>
+        <p class="text-3xl ml-2 font-normal font-serif">13</p>
+      </span>
+      <div class="ml-[120px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Baby countdown</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">$120</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img5.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Tue</p>
+        <p class="text-3xl ml-2 font-normal font-serif">17</p>
+      </span>
+      <div class="ml-[120px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Baby countdown</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">Free</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img6.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Wed</p>
+        <p class="text-3xl ml-2 font-normal font-serif">18</p>
+      </span>
+      <div class="ml-[110px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Chef’s tasting menu</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">$150</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img8.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Sun</p>
+        <p class="text-3xl ml-2 font-normal font-serif">20</p>
+      </span>
+      <div class="ml-[110px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Live cooking show</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">Sold out</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img7.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div><div class="p-10 flex items-center">
+      <span class="flex flex-col">
+        <p class="text-3xl font-normal font-serif">Mon</p>
+        <p class="text-3xl ml-2 font-normal font-serif">21</p>
+      </span>
+      <div class="ml-[99px]">
+        <span class="flex items-center gap-[12px]">
+          <div
+            class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+          >
+            <div
+              class="w-[54px] h-[54px] bg-[#fff5de] rounded-[74px] flex items-center justify-center"
+            >
+              <img src="./public/upcoming/svg.png" alt="" />
+            </div>
+          </div>
+          <p class="text-[18px] ml-[12px] font-normal text-neutral-600">
+            Jul 19, 2023 @ 8:00 am - Aug 4, 2028 @ 5:00 pm
+          </p>
+        </span>
+        <h1 class="text-3xl font-normal mt-[37px]">Social media conference</h1>
+        <h1 class="text-2xl font-normal mt-[12px]">
+          Eventicity Club 8 E 9th Street, Chicago, IL, United States
+        </h1>
+        <p class="text-lg mt-[24px] text-neutral-600">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium <br />doloremque laudantium, totam rem aperiam. Sed ut
+          perspiciatis unde omnis <br />
+          iste natus.
+        </p>
+        <h1 class="text-3xl font-normal mt-[24px]">$180</h1>
+      </div>
+      <img
+        src="./public/upcoming/upcoming-img9.png"
+        alt=""
+        class="ml-[174px]"
+      />
+    </div>
+    <!-- futir -->
+     <div class="h-[741px] bg-black p-10 flex items-center">
+      <div class="">
+        <h1 class="text-white text-6xl leading-[150%] font-serif">
+          Crafting <br />
+          Extraordinary Events <br />
+          Together
+        </h1>
+        <p class="text-white text-lg mt-[24px]">
+          Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore
+          magna aliqua. <br />Ut enim ad minim veniam, quis nostrud exercitacion
+          ullamco. sed do euismod <br />
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis <br />
+          nostrud exercitacion ullamco  
+        </p>
+        <span>
+          <svg
+            class="mt-[24px]"
+            width="132"
+            height="32"
+            viewBox="0 0 132 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_9823_1377)">
+              <path
+                d="M32 16C32 7.1635 24.8365 0 16 0C7.1635 0 0 7.1635 0 16C0 23.986 5.851 30.6054 13.5 31.8056V20.625H9.4375V16H13.5V12.475C13.5 8.465 15.8888 6.25 19.5435 6.25C21.294 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1075C19.1199 10.5 18.5 11.7334 18.5 12.9987V16H22.9375L22.2281 20.625H18.5V31.8056C26.149 30.6054 32 23.9861 32 16Z"
+                fill="white"
+              />
+              <path
+                d="M22.2281 20.625L22.9375 16H18.5V12.9987C18.5 11.7332 19.1199 10.5 21.1075 10.5H23.125V6.5625C23.125 6.5625 21.294 6.25 19.5434 6.25C15.8888 6.25 13.5 8.465 13.5 12.475V16H9.4375V20.625H13.5V31.8056C14.327 31.9352 15.1629 32.0002 16 32C16.8371 32.0002 17.673 31.9352 18.5 31.8056V20.625H22.2281Z"
+                fill="black"
+              />
+            </g>
+            <g clip-path="url(#clip1_9823_1377)">
+              <path
+                d="M66 0C57.1637 0 50 7.16375 50 16C50 24.8363 57.1637 32 66 32C74.8363 32 82 24.8363 82 16C82 7.16375 74.8363 0 66 0Z"
+                fill="#262626"
+              />
+              <path
+                d="M67.7506 14.5517L74.6 6.58984H72.9769L67.0296 13.503L62.2795 6.58984H56.8008L63.9839 17.0438L56.8008 25.3931H58.424L64.7045 18.0925L69.721 25.3931H75.1997L67.7502 14.5517H67.7506ZM59.0088 7.81176H61.5019L72.9777 24.2267H70.4846L59.0088 7.81176Z"
+                fill="white"
+              />
+            </g>
+            <g clip-path="url(#clip2_9823_1377)">
+              <path
+                d="M116 32C124.837 32 132 24.8366 132 16C132 7.16344 124.837 0 116 0C107.163 0 100 7.16344 100 16C100 24.8366 107.163 32 116 32Z"
+                fill="white"
+              />
+              <path
+                d="M123.625 12.1517C123.305 11.158 122.246 10.5706 121.263 10.4338C117.759 10.0611 114.225 10.0611 110.72 10.4338C109.745 10.5706 108.686 11.1664 108.366 12.1517C107.867 14.6937 107.867 17.3086 108.366 19.8506C108.695 20.8422 109.754 21.4317 110.737 21.5685C114.242 21.939 117.775 21.939 121.28 21.5685C122.255 21.4317 123.314 20.8338 123.634 19.8506C124.13 17.308 124.127 14.6932 123.625 12.1517ZM114.086 19.0654V12.9348L119.078 16.0001C117.396 17.0338 115.762 18.0401 114.086 19.0654Z"
+                fill="black"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_9823_1377">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+              <clipPath id="clip1_9823_1377">
+                <rect
+                  width="32"
+                  height="32"
+                  fill="white"
+                  transform="translate(50)"
+                />
+              </clipPath>
+              <clipPath id="clip2_9823_1377">
+                <rect
+                  width="32"
+                  height="32"
+                  fill="white"
+                  transform="translate(100)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+      </div>
+      <div class="ml-[77px]">
+        <h1 class="text-3xl text-amber-300">Links</h1>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">
+          Homepage
+        </p>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">Pages</p>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">Event</p>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">
+          Portfolio
+        </p>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">Blog</p>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">Shop</p>
+        <p class="text-lg font-normal font-serif text-white mt-[24px]">
+          Contact us
+        </p>
+      </div>
+      <div class="ml-[108px] -mt-[250px]">
+        <h1 class="text-4xl text-amber-300">
+          Subscribe For Our Blog & Article
+        </h1>
+        <div
+          class="w-[472px] h-[71px] bg-neutral-600 rounded-[50px] flex items-center justify-center mt-[28px] gap-[156px]"
+        >
+          <p class="ml-[44px] text-neutral-300">Your email here</p>
+          <button
+            class="w-[156px] h-[59px] items-center justify-center bg-yellow-200 rounded-[50px]"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div> 
+    <!-- fuiter-2 -->
+     <div
+      class="h-[102px] bg-neutral-900 p-10 flex items-center justify-center gap-[870px]"
+    >
+      <img src="./public/about_us_img/fuiter_logo.png" alt="" />
+      <p class="text-lg text-neutral-500">
+        Copyright © 2024 Rometheme. All Rights Reserved.
+      </p>
+    </div> 
+  </body>
+</html>
