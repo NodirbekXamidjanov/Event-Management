@@ -1,2 +1,0 @@
-#Fitness-App
-<!-- Home page -->
