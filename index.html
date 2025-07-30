@@ -1,12 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://v1.fontapi.ir/css/SFProDisplay" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ## Fitness - App ## -->
+  <header>
+    <nav class="w-[80%] mx-auto pt-12 pb-6 flex justify-between">
+      <div class="logo">
+        <a href="#">
+          <img src="public/Fitness-App-logo.svg" alt="">
+        </a>
+      </div>
+      <div class="burger-menu">
+        <img src="public/Line.svg" alt="">
+      </div>
+    </nav>
+
+    <div class="home w-[80%] mx-auto font-[700] leading-4 mt-12  mb-[64px]">
+      <p class="text-[#777E90] font-[Poppins] mb-4">TRAIN SAMRTER. GET STRONGER</p>
+      <div class="home_title">
+
+
+        <div
+          class="title text-gray-900 text-5xl not-italic font-bold leading-[56px] tracking-tighter font-[SF Pro Display]">
+          Simple fitness experience for everyone.
+        </div>
+        <p class="description text-gray-600 text-base not-italic font-normal leading-6 mt-[20px] mb-40 font-[Poppins]">
+          Track your workouts, get better results, and be the bestversion of you. Less thinking, more
+          lifting.</p>
+        <div class="home_button flex flex-col items-center gap-4">
+          <div
+            class="downloadBtn w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-[#FF592C] text-4 font-[700] leading-4 font-[SF Pro Display] text-white">
+            Download App</div>
+          <div
+            class="classBtn  w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-transparent border-[2px] border-solid border-[#E6E8EC] text-4 font-[700] leading-4 font-[SF Pro Display">
+            Book a class</div>
+        </div>
+      </div>
+
+      <img src="public/Light.svg" class="flex flex-col justify-end items-center my-12" alt="">
+      <div class="more-btn">
+        <img src="public/circle-button.svg" alt="">
+      </div>
+    </div>
+  </header>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
