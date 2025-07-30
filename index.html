@@ -1,77 +1,130 @@
-<!doctype html>
-<html lang="en">
+<px!doctype html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + TS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://v1.fontapi.ir/css/SFProDisplay" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://v1.fontapi.ir/css/SFProDisplay" rel="stylesheet">
+  </head>
 
-<body>
-  <!-- ## Fitness - App ## -->
+  <body>
+    <!-- ## Fitness - App ## -->
 
-  <!-- Header -->
-  <header class="dark:bg-[#141416]">
-    <nav class="w-[80%] mx-auto pt-12 pb-6 flex justify-between">
-      <div class="logo">
-        <a href="#">
-          <img src="public/light_logo.svg" class="hidden dark:block" alt="">
-          <img src="public/Fitness-App-logo.svg" class=" block dark:hidden" alt="">
-        </a>
-      </div>
-      <div class="lg:flex items-center gap-10">
-        <button class="hidden lg:block  py-3 px-4 rounded-[90px] border-[2px] border-solid border-[#E6E8EC] text-[#23262F] dark:text-white justify-center items-center">
-          Get free trial
-        </button>
-
-        <button class="burger-menu">
-          <img src="public/Line.svg" alt="">
-        </button>
-      </div>
-    </nav>
-
-    <div class="home w-[80%] mx-auto font-[700]  leading-4 mt-12  mb-[64px]">
-      <div class="lg:flex gap-[31px] items-center justify-center">
-        <div class="home_title">
-          <p class="text-[#777E90] font-[Poppins] mb-4">TRAIN SAMRTER. GET STRONGER</p>
-
-
-          <div
-            class="title text-gray-900 text-5xl not-italic font-bold leading-[56px] tracking-tighter font-[SF Pro Display] dark:text-white">
-            Simple fitness experience for everyone.
-          </div>
-          <p
-            class="description  text-gray-600 text-base not-italic font-normal leading-6 mt-[20px] mb-40 font-[Poppins]">
-            Track your workouts, get better results, and be the bestversion of you. Less thinking, more
-            lifting.</p>
-          <div class="home_button flex flex-col lg:flex lg:flex-row items-center gap-4">
-            <div
-              class="downloadBtn w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-[#FF592C] text-4 font-[700] leading-4 font-[SF Pro Display] text-white">
-              Download App</div>
-            <div
-              class="classBtn dark:text-white w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-transparent border-[2px] border-solid border-[#E6E8EC] text-4 font-[700] leading-4 font-[SF Pro Display">
-              Book a class</div>
-          </div>
+    <!-- Header -->
+    <header class="dark:bg-[#141416] mb-[96px]">
+      <nav class="w-[80%] mx-auto pt-12 pb-6 flex items-center justify-between">
+        <div class="logo">
+          <a href="#">
+            <img src="public/light_logo.svg" class="hidden dark:block" alt="">
+            <img src="public/Fitness-App-logo.svg" class=" block dark:hidden" alt="">
+          </a>
         </div>
+        <div class="header-nav-link hidden xl:flex xl:items-center">
+          <div class="h-12 w-[2px] ml-12 bg-[#E6E8EC]"></div>
+          <ul class="flex items-center gap-8 ml-12 mr-[84px]">
+            <li class="nav_li">
+              <a href="#">Features</a>
+            </li>
+            <li class="nav_li">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="nav_li">
+              <a href="#">Download</a>
+            </li>
+            <li class="nav_li">
+              <select>
+                <option value="" selected disabled hidden>Class</option>
+                <option value="">a</option>
+                <option value="">b</option>
+                <option value="">c</option>
+              </select>
+            </li>
+            <li class="nav_li">
+              <a href="#">Lifestyle</a>
+            </li>
+          </ul>
+          <ul class="links flex gap-6 mr-[64px]">
+            <a href="#"><img src="public/f.svg" alt=""></a>
+            <a href="#"><img src="public/instagram.svg" alt=""></a>
+            <a href="#"><img src="public/twiter.svg" alt=""></a>
+          </ul>
+        </div>
+        <div class="lg:flex items-center gap-10">
+          <button
+            class="hidden lg:block  py-3 px-4 rounded-[90px] border-[2px] border-solid border-[#E6E8EC] text-[#23262F] dark:text-white justify-center items-center">
+            Get free trial
+          </button>
 
-          <img src="public/Light.svg" class="flex flex-col justify-end items-center xl:w-[800px] xl:h-[880px]  my-12 block dark:hidden" alt="">
+          <button class="burger-menu">
+            <img src="public/Line.svg" alt="">
+          </button>
+        </div>
+      </nav>
+
+      <div class="home w-[80%] mx-auto font-[700]  leading-4 mt-12 ">
+        <div class="lg:flex gap-[31px] items-center justify-center">
+          <div class="home_title">
+            <p class="text-[#777E90] font-[Poppins] mb-4">TRAIN SAMRTER. GET STRONGER</p>
+
+
+            <div
+              class="title text-gray-900 text-5xl not-italic font-bold leading-[56px] tracking-tighter font-[SF Pro Display] dark:text-white">
+              Simple fitness experience for everyone.
+            </div>
+            <p
+              class="description  text-gray-600 text-base not-italic font-normal leading-6 mt-[20px] mb-40 font-[Poppins]">
+              Track your workouts, get better results, and be the bestversion of you. Less thinking, more
+              lifting.</p>
+            <div class="home_button flex flex-col lg:flex lg:flex-row items-center gap-4">
+              <!-- buttons -->
+              <div
+                class="downloadBtn cursor-pointer w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-[#FF592C] text-4 font-[700] leading-4 font-[SF Pro Display] text-white">
+                Download App</div>
+              <div
+                class="classBtn cursor-pointer dark:text-white w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-transparent border-[2px] border-solid border-[#E6E8EC] text-4 font-[700] leading-4 font-[SF Pro Display">
+                Book a class</div>
+            </div>
+          </div>
+
+          <img src="public/Light.svg"
+            class="flex flex-col justify-end items-center xl:w-[800px] xl:h-[880px]  my-12 block dark:hidden" alt="">
           <img src="public/Dark.svg" class="flex flex-col justify-end items-center my-12 hidden dark:block" alt="">
 
+        </div>
+        <div class="more-btn lg:mt-[84px]">
+          <img src="public/circle-button_dark.svg" class=" block dark:hidden" alt="">
+          <img src="public/circle-button.svg" class=" hidden dark:block" alt="">
+        </div>
       </div>
-      <div class="more-btn lg:mt-[84px]">
-        <img src="public/circle-button_dark.svg" class=" block dark:hidden" alt="">
-        <img src="public/circle-button.svg" class=" hidden dark:block" alt="">
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main -->
-  <script type="module" src="/src/main.ts"></script>
-</body>
+    <!-- Main -->
+    <main>
+      <!-- #section how-it-works  -->
+      <section class="how-it-works px-8">
+        <div class="title flex flex-col items-center">
+          <h4 class="text-[#23262F] text-[14px] font-normal leading-6 font-[Poppins]">We work with people from over the
+            world</h4>
+          <div class="clients  overflow-auto">
+            <ul class="flex gap-4 items-center">
+              <li><img src="public/rrota.svg" class="w-30" alt=""></li>
+              <li><img src="public/waves.svg" alt=""></li>
+              <li><img src="public/rrota.svg" alt=""></li>
+              <li><img src="public/travekers.svg" alt=""></li>
+              <li><img src="public/goodlines.svg" alt=""></li>
+              <li><img src="public/velosity.svg" alt=""></li>
+            </ul>
+          </div>
 
-</html>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+
+  </html>

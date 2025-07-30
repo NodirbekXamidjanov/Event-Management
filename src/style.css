@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@tailwind components;
+
+@layer components {
+    .nav_li {
+        @apply text-[14px]  font-[700] leading-4 text-[#777E90]
+    }
+}
