@@ -5,4 +5,7 @@
     .nav_li {
         @apply text-[14px]  font-[700] leading-4 text-[#777E90]
     }
+    .hide-scrollbar::-webkit-scrollbar {
+        @apply hidden
+    }
 }
