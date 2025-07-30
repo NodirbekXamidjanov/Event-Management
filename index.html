@@ -14,11 +14,12 @@
 
 <body>
   <!-- ## Fitness - App ## -->
-  <header>
+  <header class="dark:bg-[#141416]">
     <nav class="w-[80%] mx-auto pt-12 pb-6 flex justify-between">
       <div class="logo">
         <a href="#">
-          <img src="public/Fitness-App-logo.svg" alt="">
+          <img src="public/light_logo.svg" class="hidden dark:block" alt="">
+          <img src="public/Fitness-App-logo.svg" class=" block dark:hidden" alt="">
         </a>
       </div>
       <div class="burger-menu">
@@ -32,7 +33,7 @@
 
 
         <div
-          class="title text-gray-900 text-5xl not-italic font-bold leading-[56px] tracking-tighter font-[SF Pro Display]">
+          class="title text-gray-900 text-5xl not-italic font-bold leading-[56px] tracking-tighter font-[SF Pro Display] dark:text-white">
           Simple fitness experience for everyone.
         </div>
         <p class="description text-gray-600 text-base not-italic font-normal leading-6 mt-[20px] mb-40 font-[Poppins]">
@@ -43,14 +44,16 @@
             class="downloadBtn w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-[#FF592C] text-4 font-[700] leading-4 font-[SF Pro Display] text-white">
             Download App</div>
           <div
-            class="classBtn  w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-transparent border-[2px] border-solid border-[#E6E8EC] text-4 font-[700] leading-4 font-[SF Pro Display">
+            class="classBtn dark:text-white w-full flex justify-center items-center py-4 px-6 gap-3 self-stretch rounded-[90px] bg-transparent border-[2px] border-solid border-[#E6E8EC] text-4 font-[700] leading-4 font-[SF Pro Display">
             Book a class</div>
         </div>
       </div>
 
-      <img src="public/Light.svg" class="flex flex-col justify-end items-center my-12" alt="">
+      <img src="public/Light.svg" class="flex flex-col justify-end items-center my-12 block dark:hidden" alt="">
+      <img src="public/Dark.svg" class="flex flex-col justify-end items-center my-12 hidden dark:block" alt="">
       <div class="more-btn">
-        <img src="public/circle-button.svg" alt="">
+        <img src="public/circle-button_dark.svg" class=" block dark:hidden" alt="">
+        <img src="public/circle-button.svg" class=" hidden dark:block" alt="">
       </div>
     </div>
   </header>
