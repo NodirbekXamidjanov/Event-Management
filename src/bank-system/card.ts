@@ -43,11 +43,7 @@ export class Card {
     }
   }
   withdraw(amount: number) {
-    try {
-      if(!this.isActive || this.balance <= 0 || this.dailyLimit <= 0 || amount <= 0) {
-        throw new  Error("")
-      }
-    }
+    
   }
   changePin(newPin: number) {}
   block() {}
