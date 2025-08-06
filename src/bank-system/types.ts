@@ -1,4 +1,4 @@
-export type isActive = "Acitve" | "Disactive";
+export type isActive = "Active" | "Disactive";
 export type cardType = "VISA" | "MASTERCARD" | "HUMO" | "UZCARD";
 export type transactionType = "DEPOSIT" | "WITHDRAW" | "TRANSFER" | "P2P";
 export type transactionStatus = "PENDING" | "SUCCES" | "FAILED" | "CANCELLED";
@@ -15,6 +15,8 @@ export interface Transaction {
 export interface TransactionResult {
   transactionStatus: transactionStatus;
   transactionId: number;
+  from: number;
+  to: number;
   transactionError?: string;
 }
 
